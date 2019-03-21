@@ -1,0 +1,225 @@
+<div class="login-box">
+  <div class="card">
+    <div class="login-logo">
+      <a> Simple ChatApp</a>
+    </div>
+    <div class="card-body login-card-body" *ngIf="!regclick">
+      <form
+        #loginuser="ngForm"
+        (ngSubmit)="loginUser()"
+        class="form-horizontal"
+        autocomplete="off"
+      >
+        <div class="form-group row">
+          <label class="control-label col-md-4" for="username">Username*</label>
+          <div class="col-md-8">
+            <input
+              type="test"
+              required
+              [(ngModel)]="login.username"
+              #username="ngModel"
+              class="form-control"
+              id="username"
+              placeholder="Enter username"
+              name="username"
+            />
+            <span
+              class="help-block"
+              *ngIf="username.invalid && username.touched"
+              >Username is Required</span
+            >
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="control-label col-md-4" for="password">Password*</label>
+          <div class="col-md-8">
+            <input
+              type="password"
+              required
+              [(ngModel)]="login.password"
+              #password="ngModel"
+              class="form-control"
+              id="password"
+              placeholder="Enter password"
+              name="password"
+            />
+            <span
+              class="help-block"
+              *ngIf="password.errors?.required && password.touched"
+              >Password is Required</span
+            >
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-12">
+            <button
+              [disabled]="loading || loginuser.invalid"
+              type="submit"
+              class="btn btn-primary btn-block text-center"
+            >
+              <i *ngIf="loading" class="fa fa-spinner fa-spin"></i>&nbsp; Login
+            </button>
+          </div>
+          <div class="col-md-12 text-center">
+            <a
+              href="javascript:void(0)"
+              class="btn btn-link"
+              (click)="openReg()"
+              >Create Account</a
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="card-body login-card-body" *ngIf="regclick">
+      <form
+        #reguser="ngForm"
+        (ngSubmit)="regUser()"
+        class="form-horizontal"
+        autocomplete="off"
+      >
+        <div class="form-group row">
+          <label class="control-label col-md-4" for="first_name"
+            >First name*</label
+          >
+          <div class="col-md-8">
+            <input
+              type="text"
+              required
+              [(ngModel)]="reg.first_name"
+              #first_name="ngModel"
+              class="form-control"
+              id="first_name"
+              placeholder="Enter first name"
+              name="first_name"
+            />
+            <span class="help-block" *ngIf="first_name.invalid && first_name.touched"
+              >First name is Required</span
+            >
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="control-label col-md-4" for="last_name"
+            >Last name*</label
+          >
+          <div class="col-md-8">
+            <input
+              type="text"
+              required
+              [(ngModel)]="reg.last_name"
+              #last_name="ngModel"
+              class="form-control"
+              id="last_name"
+              placeholder="Enter last name"
+              name="last_name"
+            />
+            <span class="help-block" *ngIf="last_name.invalid && last_name.touched"
+              >Last name is Required</span
+            >
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="control-label col-md-4" for="email">Email*</label>
+          <div class="col-md-8">
+            <input
+              type="email"
+              required
+              [(ngModel)]="reg.email"
+              #email="ngModel"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+              name="email"
+            />
+            <span class="help-block" *ngIf="email.invalid && email.touched"
+              >Email is Required</span
+            >
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="control-label col-md-4" for="username">Username*</label>
+          <div class="col-md-8">
+            <input
+              type="test"
+              required
+              [(ngModel)]="reg.username"
+              #username="ngModel"
+              class="form-control"
+              id="username"
+              placeholder="Enter username"
+              name="username"
+            />
+            <span
+              class="help-block"
+              *ngIf="username.invalid && username.touched"
+              >Username is Required</span
+            >
+          </div>
+        </div>
+        <div class="form-group row">
+            <label class="control-label col-md-4" for="mobile_no">Mobile*</label>
+            <div class="col-md-8">
+              <input
+                type="test"
+                required
+                [(ngModel)]="reg.mobile_no"
+                #mobile_no="ngModel"
+                class="form-control"
+                id="mobile_no"
+                placeholder="Enter mobile no."
+                name="mobile_no"
+              />
+              <span
+                class="help-block"
+                *ngIf="mobile_no.invalid && mobile_no.touched"
+                >Mobile no is Required</span
+              >
+            </div>
+          </div>
+        <div class="form-group row">
+          <label class="control-label col-md-4" for="password">Password*</label>
+          <div class="col-md-8">
+            <input
+              type="password"
+              required
+              [(ngModel)]="reg.password"
+              #password="ngModel"
+              class="form-control"
+              id="password"
+              placeholder="Enter password"
+              name="password"
+            />
+            <span
+              class="help-block"
+              *ngIf="password.errors?.required && password.touched"
+              >Password is Required</span
+            >
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-12">
+            <button
+              [disabled]="loading || reguser.invalid"
+              type="submit"
+              class="btn btn-primary btn-block text-center"
+            >
+              <i *ngIf="loading" class="fa fa-spinner fa-spin"></i>&nbsp;
+              Registration
+            </button>
+          </div>
+          <div class="col-md-12 text-center">
+            <a
+              href="javascript:void(0)"
+              class="btn btn-link"
+              (click)="openReg()"
+              >Back to Login</a
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

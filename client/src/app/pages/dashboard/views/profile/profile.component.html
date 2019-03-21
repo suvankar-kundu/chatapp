@@ -1,0 +1,58 @@
+
+<section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2 mt-2 text-center">
+        <div class="col-sm-12">
+          <h3 style="color:#C10303">Chat Room</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="conversation"></div>
+<section class="content chatbox-holder">
+  <div class="chatbox">
+    <div class="chatbox-top">
+      <div class="chatbox-avatar">
+        <a  href="javascript:void(0)"><img src="https://static.thenounproject.com/png/547023-200.png" /></a>
+      </div>
+      <div class="chat-partner-name">
+        <span class="status online"></span>
+        <a  href="javascript:void(0)">Group Chat</a>
+      </div>
+
+    </div>
+
+    <div class="chat-messages" id="chatroom">
+    </div>
+
+    <div class="chat-input-holder">
+      <textarea class="chat-input" [(ngModel)]="message" name="message"></textarea>
+      <input type="button" value="Send" (click)="sendMessage()" class="message-send" />
+    </div>
+
+  </div>
+</section>
+
+  <!-- <section >
+    <div id="change_username">
+<input id="username" type="text" />
+<button id="send_username" type="button">Change username</button>
+    </div>
+  </section>
+
+  <section id="chatroom">
+
+  </section> -->
+
+
+<!--
+  <section id="input_zone">
+    <input id="message" class="vertical-align" type="text" />
+    <button id="send_message" class="vertical-align" type="button">Send</button>
+  </section> -->
+
+
+
+
+
+

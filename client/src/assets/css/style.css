@@ -1,0 +1,216 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    background: white !important;
+  }
+  
+  body {
+    background: white !important;
+    zoom: 90%;
+  }
+  
+  .content-wrapper {
+    background: white;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  footer.main-footer {
+    position: fixed;
+    height: 55px;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .help-block {
+    color: red;
+    font-size: 11px;
+  }
+  
+  @media (min-width: 768px) {
+  
+    .content-wrapper,
+    .main-footer,
+    .main-header {
+      transition: margin-left 0.3s ease-in-out;
+      margin-left: 0px;
+      z-index: 3000;
+    }
+  }
+  
+  .modal-dialog.modal-lg {
+    padding-top: 50px;
+  }
+  
+  nav.main-header.navbar.navbar-expand.bg-white.navbar-light.border-bottom {
+    background-color: #1e3f5b !important;
+  }
+  
+  .nav-link {
+    color: white !important;
+  }
+  
+  nav.main-header.navbar.navbar-expand.bg-white.navbar-light.border-bottom {
+    height: 50px;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:focus,
+  .navbar-light .navbar-nav .nav-link:hover {
+    background-color: #446988;
+  }
+  
+  ul.navbar-nav {
+    padding-left: 20px;
+  }
+  
+  li.nav-item.d-none.d-sm-inline-block {
+    padding: 0px 6px;
+  }
+  
+  .active {
+    background-color: #446988;
+  }
+  
+  .PAD-15R {
+    padding-right: 15px;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #1e3f5b;
+    border-color: #1e3f5b;
+  }
+  
+  .modal-header {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    background: #1e3f5b;
+    color: white;
+    display: block;
+  }
+  
+  .btn-default:hover {
+    background: #1e3f5b;
+    color: white;
+    border: 1px solid #1e3f5b;
+  }
+  
+  .btn-default {
+    background: white;
+    color: #464a4e;
+    border: 1px solid #464a4e;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #1e3f5b;
+    border-color: #1e3f5b;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #1e3f5b;
+    border-color: #1e3f5b;
+  }
+  
+  .close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    color: white;
+  }
+  
+  
+  .close:not(:disabled):not(.disabled):hover {
+    color: white;
+  }
+  
+  .modal {
+    z-index: 99999;
+  }
+  
+  .btn-primary.disabled,
+  .btn-primary:disabled {
+    color: #fff;
+    background-color: #565656;
+    border-color: #565656;
+  }
+  
+  .cursor-hand {
+    cursor: pointer;
+  }
+  
+  .login-box,
+  .register-box {
+    width: 360px;
+    margin: 7% auto;
+  }
+  
+  @media (max-width: 576px) {
+  
+    .login-box,
+    .register-box {
+      width: 90%;
+      margin-top: 20px;
+    }
+  }
+  
+  .login-box-body,
+  .register-box-body {
+    background: #ffffff;
+    padding: 20px;
+    border-top: 0;
+    color: #666;
+  }
+  
+  .login-box-body .form-control-feedback,
+  .register-box-body .form-control-feedback {
+    color: #777;
+  }
+  
+  .login-box-msg,
+  .register-box-msg {
+    margin: 0;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+  }
+  
+  .login-logo,
+  .register-logo {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 15px;
+  }
+  
+  .login-logo a,
+  .register-logo a {
+    color: #444;
+  }
+
+
+  .btn[disabled] {
+    background: gray !important;
+    color: white !important;
+    border: grey !important;
+  }
+
+  .btn[disabled]:hover {
+    cursor: not-allowed !important;
+  }
+
+  .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #1e3f5b !important;
+    border-color: #1e3f5b !important;
+}

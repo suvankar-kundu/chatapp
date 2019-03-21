@@ -1,0 +1,102 @@
+{
+	"fetch": "Successfully fetched user info",
+	"documents": {
+		"fail": "Documents Not Enrolled",
+		"success": "Documents Enrollment Successfull"
+	},
+	"user_profile_update": "Profile updated successfully",
+	"user_uploadPhoto": {
+		"success": "Document verified",
+		"fail": "Document verification failed"
+	},
+	"resend_otc": "OTC has been sent",
+	"verify_otc": {
+		"success": "OTC is valid",
+		"fail": "Wrong Code, Please try again or click on Send Another Code"
+	},
+	"firebase_token": "Firebase token saved",
+	"fetchAsHost": {
+		"success": "Appointment fetched successfully.",
+		"fail": "Id entered is not valid"
+	},
+	"create_appointment": {
+		"fail": "User does not exist",
+		"success": "Appointment created successfully",
+		"dateFormat": "Date format not supported"
+	},
+	"message": {
+		"success": "Success",
+		"fail": "Failed"
+	},
+	"forgotpwd": {
+		"fail": "Unable to send email",
+		"success": "An e-mail has been sent to your email id with further instructions."
+	},
+	"login": {
+		"fail": "Incorrect credentials. Try again.",
+		"success": "Success"
+	},
+	"socketTest": "Api test",
+	"ensure_Authenticated": {
+		"fail": "Access Denied",
+		"token_expire": "Token has expired",
+		"wrongToken": "Token Mismatch"
+	},
+	"otc_resend_limit": "You have exceeded resend OTC limit.",
+	"hostFetchAgainstUsername": {
+		"fail": "Invalid Username Entered"
+	},
+	"changePassword": {
+		"blank": "Password should not be empty",
+		"change_password": "User not found",
+		"fail": "Invalid Old Password",
+		"success": "Password changed successfully"
+	},
+	"createAdmin": {
+		"passwordGenerate": "Password is not generated",
+		"fail_username": "Username is already taken",
+		"fail_email": "Email is already taken",
+		"fail_mobile": "Mobile no. already exists"
+	},
+	"poeNotFound": "Poe not found.",
+	"resetPassword": {
+		"success": "Reset Password Successful",
+		"fail": "Failed"
+	},
+	"fetchUserDetails": "User details not found",
+	"poe_id": {
+		"success": "Poe generated successfully",
+		"fail": "Poe not found"
+	},
+	"viewVisitorDetails": {
+		"success": "Visitor details fetched successfully",
+		"fail": "Visitor details not found",
+		"doc": "No document found for this visitor"
+	},
+	"send_appointment_notification": {
+		"success": "Notification send to host",
+		"fail": "Appointment not found"
+	},
+	"getGateDetails": {
+		"success": "Gate found",
+		"fail_poe": "Entered Poe doesnt exists",
+		"fail_gate": "Gate not found against the entered Poe"
+	},
+	"appointmentValidity": {
+		"success": "Appointment is valid",
+		"fail": "Invalid appointment"
+	},
+	"report": {
+		"success": "Report created successfully",
+		"fail": "Invalid Appointment"
+	},
+	"profileSectionChange": {
+		"success": "Profile Section Changed successfully",
+		"fail": "Invalid User"
+	},
+	"fetchBuildingDetails": {
+		"success": "Building details found",
+		"fail": "Building not found"
+	},
+	"google_vision_failure": "There is a temporary problem validating your ID, please try again later"
+}
